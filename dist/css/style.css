@@ -350,13 +350,13 @@ body.body-hidden {
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 34px;
 }
 
 .header__nav ul a {
   color: var(--color_white);
   font-family: "Inter";
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
@@ -1327,7 +1327,7 @@ body.body-hidden {
   }
 
   .header__nav ul a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hero__title {
@@ -1402,11 +1402,15 @@ body.body-hidden {
 
 @media screen and (max-width: 1300px) {
   .header__logo span {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .header__logo h2 {
-    font-size: 30px;
+    font-size: 26px;
+  }
+
+  .header-actions {
+    gap: 11px;
   }
 
   .header-actions__socials__item {

@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    const swiper = new Swiper('.hero__slider', {
+        // Optional parameters
+        loop: true,
+        speed: 1500,           
+        effect: 'fade',
+        autoplay: {
+            delay: 3500,
+        },
+    });
     // Burger menu
     const burger = document.querySelector('.header-burger');
     const menu = document.querySelector('.header__nav__mobile');
@@ -59,4 +68,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
     bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
     bindModal('.fixed-contact', '.modal__wrapper2', '.modal__close2')
+    $('input[type="tel"]').mask("+7 (999) 999-99-99");
 })

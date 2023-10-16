@@ -1,0 +1,91 @@
+.advantages {
+    padding-top: 145px;
+    background-color: var(--color_bg);
+    // .advantages__inner
+
+    &__inner {
+    }
+
+    // .advantages__header
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .advantages__title
+
+    &__title {
+        
+    }
+
+    // .advantages__descr
+
+    &__descr {
+        width: 61%;
+        color: rgba(255, 255, 255, 0.80);
+        font-family: "Inter";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+    }
+
+    // .advantages__items
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 60px;
+    }
+
+    // .advantages__item
+
+    &__item {
+        width: calc((100% / 3) - 20px);
+        padding: 54px 40px;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.05);
+        transition: all .2s linear;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & svg path{
+            transition: all .2s linear;
+        }
+        &:hover{
+            background: rgba(255, 255, 255, 0.01);
+            & svg path{
+                fill: #fff;
+            }
+        }
+        &__title{
+            color: var(--color_white);
+            margin-top: 40px;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 48px */
+            text-transform: uppercase;
+        }
+        &__descr{
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.80);
+            font-family: "Inter";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 36px */
+        }
+    }
+    &__item__img{
+        padding: 0;
+        height: 420px;
+    }
+}
+

@@ -1,0 +1,55 @@
+.how-work {
+    padding: 155px 0;
+    // .how-work__inner
+    background-image: url('../images/how-work-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    & .container{
+        position: relative;
+    }
+    &__inner { 
+        width: 49%;
+
+        &::before{
+            content: "";
+            width: 504px;
+            height: 504px;
+            position: absolute;
+            left: 48%;
+            top: 9%;
+            border-radius: 504px;
+            background: rgba(186, 145, 83, 0.20);
+            filter: blur(182px);
+        }
+    }
+
+    // .how-work__title
+
+    &__title {
+    }
+
+    // .how-work__descr
+
+    &__descr {
+        color: rgba(255, 255, 255, 0.80);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        &:first-child{
+            margin-top: 50px;
+        }
+        margin-top: 12px;
+    }
+
+    // .how-work__btn
+
+    &__btn {
+        margin-top: 60px;
+        display: inline-flex;
+        padding: 22px 45px 26px 45px;
+    }
+}

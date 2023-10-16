@@ -1,0 +1,48 @@
+.principles {
+    padding: 160px 0;
+    &__inner{
+        display: flex;
+        gap: 93px;
+    }
+    // .principles__info
+
+    &__info {
+    }
+
+    // .principles__items
+
+    &__items {
+        display: flex;
+        gap: 50px 46px;
+        flex-wrap: wrap;
+    }
+
+    // .principles__item
+
+    &__item {
+        cursor: pointer;
+        width: calc((100% / 2) - 23px);
+        &__descr p{
+            margin-top: 15px;
+            color: rgba(255, 255, 255, 0.80);
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 45px */
+        }
+        & svg path{
+            transition: all .3s linear;
+        }
+        &:hover{
+            & svg path{
+                fill: #fff;
+            }
+        }
+    }
+
+    // .principles__img
+
+    &__img {
+    }
+}

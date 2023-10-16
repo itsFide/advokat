@@ -1,0 +1,50 @@
+.mission {
+    padding: 160px 0; 
+    background-color: var(--color_bg);
+    // .mission__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+
+    // .mission__img
+
+    &__img {
+    }
+
+    // .mission__text
+
+    &__text {
+    }
+
+    // .mission__title
+
+
+    // .mission__descr
+
+    &__descr {
+        margin-bottom: 12px;
+        color: rgba(255, 255, 255, 0.80);
+        font-family: "Inter";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        line-height: 150%; 
+    }
+    &__descr:last-child{
+        margin-bottom: 0;
+    }
+
+    // .mission__btn
+
+    &__btn {
+        display: inline-flex;
+        padding: 22px 80px;
+        margin-top: 60px;
+    }
+}

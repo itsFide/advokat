@@ -1,0 +1,114 @@
+// html,body{
+//     overflow-x: hidden;
+// }
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--color_bg);
+    overflow-x: hidden;
+    &.body-hidden{
+        overflow: hidden;
+    }
+}
+.title{
+    color: var(--color_white);
+    font-family: "Oswald";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 104px */
+    text-transform: uppercase;
+    & span{
+        color: var(--color_gold);
+    }
+    & a{
+        text-decoration: none;
+        color: var(--color_gold);
+        transition: all .2s linear;
+        &:hover{
+            color: #674f2b;
+        }
+    }
+}
+.btn{
+    // padding: 22px 0 26px 0;
+    background: var(--color_gold);
+    color: var(--color_white);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 32.4px */
+    cursor: pointer;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    & svg,
+    & img{
+        transition: all .2s linear;
+    }
+    &:hover{
+        background-color: #916f3d;
+        & img,
+        & svg{
+            transform: translateX(10px);
+        }
+    }
+}
+.container{
+    max-width: $mw;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title{
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--color_white);
+    text-transform: uppercase;
+    & span{
+        color: var(--color_gold);
+    }
+}
+.title-mb-40{
+    margin-bottom: 40px;
+    font-size: 62px;
+}
+.title-mb-60{
+    margin-bottom: 60px;
+    font-size: 80px;
+}
+.btn-transparent{
+    background-color: transparent;
+    border: 2px solid var(--color_gold);
+    color: var(--color_gold);
+    & svg{
+        transition: all .3s linear;
+    }
+    &:hover{
+        color: #fff;
+        background-color: var(--color_gold);
+        & svg path{
+            stroke: #fff;
+        }
+    }
+}
+.fixed-contact{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_gold);
+    z-index: 50;
+    border-radius: 100%;
+    transition: all .3s linear;
+    &:hover{
+        background-color: #674f2b;
+    }
+}

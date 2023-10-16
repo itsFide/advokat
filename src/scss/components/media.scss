@@ -1,0 +1,637 @@
+@media screen and (max-width:1630px) {
+    .hero{
+        &__title{
+            width: 60%;
+        }
+    }
+    .contacts{
+        & .map{
+            left: -10%;
+        }
+    }
+}
+@media screen and (max-width:1475px) {
+    .header{
+        &__nav{
+            & ul{
+                gap: 20px;
+            }
+            & ul a{
+                font-size: 18px;
+            }
+        }
+    }
+    .hero{
+        &__title{
+            font-size: 66px;
+        }
+        &__subtitle{
+            font-size: 24px;
+        }
+    }
+    .mission{
+        &__inner{
+            gap: 40px;
+        }
+    }
+    .principles{
+        & .title{
+            font-size: 68px;
+        }
+        &__info{
+            width: 50%;
+        }
+        &__img{
+            width: 500px;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 60px 0;
+        & .map{
+            order: 2;
+            position: static;
+            width: 100%;
+            margin-top: 25px;
+            & iframe{
+                height: 350px;
+            }
+        }
+        &__inner{
+            max-width: 100%;
+            order: 1;
+        }
+    }
+    .footer{
+        padding-top: 30px;
+        &__inner{
+            padding-top: 0;
+        }
+    }
+}
+@media screen and (max-width:1400px){
+    .inst{
+        &__title{
+            font-size: 56px;
+        }
+    }
+    .footer{
+        &__col{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width:1300px) {
+    .header{
+        &__logo{
+            & span{
+                font-size: 16px;
+            }
+            & h2{
+                font-size: 30px;
+            }
+        }
+        &-actions{
+            &__socials__item{
+                width: 50px;
+                height: 50px;
+            }
+            &__contacts{
+                & a{
+                    font-size: 20px;
+                }
+                & span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .mission{
+        &__inner{
+            flex-direction: column;
+        }
+    }
+    .services{
+        &__item{
+            &__descr{
+                font-size: 20px;
+            }
+            &__title{
+                font-size: 24px;
+                width: 100%;
+            }
+        }
+    }
+    .reviews{
+        &__item{
+            min-height: auto;
+            &__descr{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1185px){
+    .header{
+        &__nav{
+            display: none;
+        }
+        &__inner{
+            justify-content: unset;
+        }
+        &-actions{
+            margin-left: auto;
+            &__contacts{
+                display: none;
+            }
+        }
+        &-burger{
+            display: flex;
+            margin-left: 30px;
+        }
+    }
+    .hero{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        &__title{
+            width: 100%;
+        }
+    }
+    .advantages{
+        &__items{
+            
+        }
+        &__item{
+            width: calc((100% / 2)  - 20px);
+        }
+    }
+    .principles{
+        &__inner{
+            flex-direction: column;
+        }
+        &__info{
+            width: 100%;
+        }
+        &__item{
+            width: calc((100% / 3) - 31px);
+        }
+        &__img{
+            margin: 0 auto;
+        }
+    }
+    .purpose-banner{
+        &__title{
+            font-size: 68px;
+        }
+    }
+    .services{
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
+    .reviews{
+        &__title{
+            font-size: 68px;
+        }
+        &__item{
+            min-height: auto;
+            width: calc((100% / 2) - 20px);
+            &__descr{
+                font-size: 18px;
+            }
+        }
+    }
+    .inst{
+        &__inner{
+            flex-direction: column;
+        }
+        &__info{
+            width: 100%;
+        }
+        &__profile{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            &__img{
+                width: 50%;
+            }
+            &__text{
+                width: 75%;
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .contacts{
+        & .title{
+            font-size: 68px;
+        }
+    }
+    .footer{
+        &__inner{
+            gap: 25px;
+            flex-direction: column;
+        }
+        &__col{
+            width: 100%;
+            &__item{
+                width: 100%;
+            }
+        }
+        &__address{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .mission{
+        &__img{
+            & img{
+                width: 100%;
+            }
+        }
+    }
+    .proposal-banner{
+        &__descr{
+            width: 100%;
+        }
+        &__buttons{
+            flex-direction: column;
+            & button,
+            & a{
+                justify-content: center;
+            }
+        }
+    }
+    .advantages{
+        &__items{
+            
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+    .principles{
+        &__item{
+            width: calc((100% / 2) - 23px);
+            &__descr{
+                & p{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .purpose-banner{
+        &__title{
+            width: 100%;
+            font-size: 54px;
+        }
+    }
+    .services{
+        &__item {
+            width: 100%;
+        }
+    }
+    .reviews{
+        &__header{
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__title{
+            font-size: 68px;
+        }
+        &__item{
+            min-height: auto;
+            width: 100%;
+            &__descr{
+                font-size: 18px;
+            }
+        }
+    }
+    .contacts{
+        & .title{
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+        &__descr{
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+    }
+}
+@media screen and (max-width:785px){
+    .title-mb-60{
+        font-size: 48px;
+    }
+    .title-mb-40{
+        font-size: 48px;
+    }
+    .reviews{
+        &__title{
+            font-size: 48px;
+        }
+        
+    }
+    .inst{
+        &__title{
+            font-size: 48px;
+        }
+        &__descr{
+            font-size: 22px;
+            margin-top: 25px;
+        }
+        &__btn{
+            margin-top: 25px;
+        }
+    }
+    .fixed-contact{
+        display: flex;
+    }
+}
+@media screen and (max-width:585px){
+    .title-mb-40{
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+    .title-mb-60{
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+    .header{
+        &__inner{
+            
+            padding: 15px 0;
+        }
+        &__logo{
+            & h2{
+                font-size: 20px;
+            }
+            & span{
+                font-size: 10px;
+            }
+        }
+        &-actions{
+            
+            &__socials{
+                gap: 6px;
+            }
+            &__socials__item{
+                width: 36px;
+                height: 36px;
+                & img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .hero{
+        padding-top: 100px;
+        padding-bottom: 60px;
+        &__title{
+            font-size: 36px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+        &__btn{
+            margin: 30px auto 0 auto;
+            font-size: 18px;
+        }
+    }
+    .mission{
+        &__inner{
+            gap: 25px;
+        }
+        padding: 60px 0;
+        &__title{
+            text-align: center;
+            font-size: 26px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+        &__btn{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .proposal-banner{
+        & .title{
+            font-size: 34px;
+            text-align: center;
+        }
+        padding: 60px 0;
+        &__descr{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    .advantages{
+        padding: 60px 0;
+        &__items{
+            gap: 15px;
+        }
+        &__item{
+            padding: 35px 15px;
+            &__img{
+                padding: 0;
+                max-height: 300px;
+            }
+            & svg{
+                width: 40px;
+                height: 40px;
+            }
+            &__descr{
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+    .btn{
+        padding: 15px 25px;
+        font-size: 16px;
+        & svg{
+            width: 22px;
+            height: 22px;
+        }
+    }
+    .principles{
+        padding: 0px 0px 60px 0;
+        & .title{
+            font-size: 34px;
+        }
+        &__item{
+            & svg{
+                width: 20px;
+                height: 20px;
+            }
+            &__descr{
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+        &__img{
+            display: none;
+        }
+    }
+    .purpose-banner{
+        padding: 60px 0;
+        &__title{
+            font-size: 34px;
+        }
+    }
+    .services{
+        padding: 60px 0;
+        &__items{
+            gap: 15px;
+        }
+        &__item {
+            padding: 35px 15px;
+            width: 100%;
+            &__num{
+                font-size: 26px;
+            }
+            &__title{
+                font-size: 18px;
+            }
+            &__descr{
+                font-size: 16px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            &__img{
+                padding: 0;
+                max-height: 300px;
+            }
+            &__more{
+                font-size: 16px;
+                & svg{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .reviews{
+        padding: 60px 0;
+        &__title{
+            font-size: 34px;
+        }
+        &__header{
+            margin-bottom: 25px;
+        }
+        &__item{
+            padding: 25px 15px;
+            &__descr{
+                font-size: 16px;
+                margin-top: 15px;
+            }
+            &__title{
+                font-size: 26px;
+            }
+        }
+    }
+    .inst{
+        padding: 60px 0;
+        &__title{
+            font-size: 26px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+        &__btn{
+        }
+        &__profile{
+            display: none;
+        }
+    }
+    .contacts{
+        padding: 0px 0 60px 0;
+        & .title{
+            font-size: 22px;
+        }
+        &__descr,
+        &__descr a{
+            font-size: 16px;
+        }
+    }
+    .footer{
+        padding-top: 0;
+        &__col__title{
+            font-size: 26px;
+        }
+        &__col{
+            &__contacts{
+                gap: 15px;
+            }
+            &__actions{
+                & p{
+                    margin-top: 15px;
+                }
+            }
+        }
+        & p,
+        & a,
+        & span{
+            font-size: 16px;
+        }
+        &__copyright{
+            & p{
+                font-size: 11px;
+            }
+        }
+    }
+    .modal__wrapper{
+        & .modal{
+            max-height: 465px;
+            width: 95%;
+            padding: 25px;
+            &__title{
+                font-size: 26px;
+            }
+            &__descr{
+                font-size: 16px;
+            }
+            & form{
+                & input{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+            &__policy{
+                font-size: 16px;
+            }
+            &__form__btn{
+                font-size: 16px;
+            }
+            &__close{
+                right: 20px;
+                top: 20px;
+                & img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .modal__wrapper2{
+        & .modal{
+            max-height: 367px;
+            &__descr{
+                margin-bottom: 17px;
+            }
+            &__form__btn{
+                margin-top: 8px;
+            }
+        }
+    }
+}

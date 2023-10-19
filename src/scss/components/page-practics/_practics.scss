@@ -1,0 +1,57 @@
+.practics {
+    padding: 80px 0 100px 0;
+    // .practics__items
+
+    &__items {
+        
+    }
+
+    // .practics__item
+
+    &__item {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom: 2px solid var(--color_gold);
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000d3;
+            z-index: 1;
+        }
+        &:hover{
+            background-color: unset;
+        }
+        & .overlay{
+            // content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #282826;
+            transition: all .5s ;
+            // background-color: #000;
+            z-index: 1;
+        }
+        &:hover .overlay{
+            opacity: 0;
+        }
+        &__title,
+        &__subtitle,
+        &__descr,
+        &__more{
+            position: relative;
+            z-index: 2;
+        }
+        &__more{
+            margin-top: 40px;
+        }
+    }
+}
+

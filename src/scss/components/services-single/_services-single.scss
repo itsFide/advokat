@@ -1,0 +1,95 @@
+.services-single {
+    padding: 80px 0 100px 0;
+    // .services-single__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    // .services-single__info
+    &__more{
+        margin-top: 40px;
+        gap: 15px;
+    }
+    &__info {
+        width: 51%;
+        & p{
+            color: rgba(255, 255, 255, 0.80);
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 36px */
+            margin-bottom: 15px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // .services-single__img
+
+    &__img {
+        width: 712px;
+        height: 475px;
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__btn{
+        margin-top: 60px;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+        &__btn{
+            margin-top: 80px;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(186, 145, 83, 0.10);
+        padding: 26px 0;
+        & .services-single__more{
+            margin-top: 0;
+        }
+        &__info{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        &__num{
+            color: var(--color_gold);
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 36px */
+            text-transform: uppercase;
+        }
+        &__title{
+            color: var(--color_white);
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 45px */
+        }
+    }
+}
+.container {
+}
+.btn {
+}
+.services {
+
+    // .services__btn
+
+}

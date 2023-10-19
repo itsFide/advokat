@@ -8,6 +8,52 @@ document.addEventListener('DOMContentLoaded', ()=>{
             delay: 3500,
         },
     });
+    const about = new Swiper('.about__images', {
+        // Optional parameters
+        loop: true,
+        speed: 1500,           
+        effect: 'fade',
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    const certificates = new Swiper('.certificates__slider', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween:30,
+         // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        585: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+        }
+    });
     // Burger menu
     const burger = document.querySelector('.header-burger');
     const menu = document.querySelector('.header__nav__mobile');
@@ -68,5 +114,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
     bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
     bindModal('.fixed-contact', '.modal__wrapper2', '.modal__close2')
+    bindModal('.modal__info__open', '.modal__wrapper3', '.modal__close3')
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
 })

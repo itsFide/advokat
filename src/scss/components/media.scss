@@ -73,6 +73,27 @@
             padding-top: 0;
         }
     }
+    .home-page .footer{
+        padding-top: 30px;
+    }
+    .about{
+        // &__inner{
+        //     flex-direction: column;
+        // }
+        // &__info{
+        //     width: 100%;
+        // }
+        &__images{
+            max-width: 500px;
+            max-height: 600px;
+        }
+    }
+    .services{
+        &-single__img{
+            width: 500px;
+            height: 400px;
+        }
+    }
 }
 @media screen and (max-width:1400px){
     .inst{
@@ -83,6 +104,13 @@
     .footer{
         &__col{
             width: 50%;
+        }
+    }
+    .page-contacts{
+        &__item{
+            &__info{
+                font-size: 24px;
+            }
         }
     }
 }
@@ -127,6 +155,33 @@
                 width: 100%;
             }
         }
+        
+    }
+    .practics{
+        &__item{
+            &__subtitle{
+                font-size: 20px;
+            }
+        }
+    }
+    .card{
+        &__item{
+            width: calc(50% - 20px);
+            &__descr{
+                font-size: 20px;
+            }
+            &__title{
+                font-size: 24px;
+                width: 100%;
+            }
+        }
+    }
+    .more{
+        font-size: 18px;
+        & svg{
+            width: 15px;
+            height: 15px;
+        }
     }
     .reviews{
         &__item{
@@ -134,6 +189,21 @@
             &__descr{
                 font-size: 18px;
             }
+        }
+    }
+    .about{
+        &__inner{
+            flex-direction: column;
+        }
+        &__info{
+            width: 100%;
+        }
+    }
+    .blog{
+        &-item{
+           
+            width: calc(50% - 20px);
+          
         }
     }
 }
@@ -194,6 +264,34 @@
         &__item {
             width: calc(50% - 20px);
         }
+        &-single{
+            &__inner{
+                flex-direction: column;
+            }
+            &__info{
+                width: 100%;
+            }
+            &__img{
+                width: 100%;
+            }
+            &__item{
+                gap: 15px;
+                &__title{
+                    font-size: 22px;
+                }
+                &__info{
+                    gap: 20px;
+                }
+            }
+            &__more{
+                font-size: 20px;
+            }
+        }
+    }
+    .card{
+        &__item{
+            width: calc(50% - 20px);
+        }
     }
     .reviews{
         &__title{
@@ -232,6 +330,35 @@
     .contacts{
         & .title{
             font-size: 68px;
+        }
+    }
+    .blog{
+        &-single{
+            &__inner{
+                flex-direction: column;
+            }
+            &__info{
+                width: 100%;
+            }
+            &__sidebar{
+                width: 100%;
+            }
+        }
+    }
+    .page-contacts{
+        &__items{
+            gap: 25px;
+            // flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            &__title{
+                text-align: center;
+            }
+            &__info{
+                text-align: center;
+            }
         }
     }
     .footer{
@@ -298,6 +425,56 @@
         &__item {
             width: 100%;
         }
+        &-single{
+            &__info{
+                & p{
+                    font-size: 20px;
+                }
+            }
+            &__more{
+                margin-top: 25px;
+            }
+        }
+    }
+    .card{
+        &__item{
+            width: 100%;
+        }
+    }
+    .blog{
+        &-item{
+            width: 100%;
+            &__title{
+                font-size: 22px;
+            }
+            &__more{
+                margin-top: 25px;
+            }
+        }
+        &-items{
+            gap: 40px 0;
+        }
+        &-single{
+            &__socials{
+                padding: 20px;
+                &__title{
+                    font-size: 32px;
+                }
+                &__descr{
+                    margin-top: 15px;
+                }
+                &__item{
+                    width: 50px;
+                    height: 50px;
+                    & img{
+                        width: 100%;
+                    }
+                }
+                &__items{
+                    margin-top: 25px;
+                }
+            }
+        }
     }
     .reviews{
         &__header{
@@ -323,6 +500,45 @@
         &__descr{
             margin-bottom: 25px;
             font-size: 22px;
+        }
+    }
+    .about{
+        &__title{
+            font-size: 54px;
+        }
+        &__descr {
+            & p{
+                font-size: 18px;
+            }
+            & blockquote{
+                font-size: 18px;
+            }
+        }
+    }
+    .page-hero{
+        padding: 155px 0 60px 0;
+        &__title{
+            font-size: 62px;
+            width: 100%;
+        }
+    }
+    .breadcrumbs{
+        & ul{
+            & li a{
+                font-size: 18px;
+            }
+        }
+    }
+    .modal__wrapper3 .modal{
+        padding: 50px;
+        &__title{
+            font-size: 48px;
+        }
+        &__descr{
+            margin-top: 35px;
+        }
+        &__btn{
+            margin-top: 35px;
         }
     }
 }
@@ -430,6 +646,7 @@
             text-align: center;
         }
         padding: 60px 0;
+        margin-bottom: 50px;
         &__descr{
             font-size: 16px;
             text-align: center;
@@ -459,9 +676,10 @@
     .btn{
         padding: 15px 25px;
         font-size: 16px;
+        & img,
         & svg{
-            width: 22px;
-            height: 22px;
+            width: 15px;
+            height: 15px;
         }
     }
     .principles{
@@ -521,6 +739,55 @@
                 }
             }
         }
+        &-single{
+            padding: 60px 0;
+            &__info{
+                & p{
+                    font-size: 16px;
+                }
+            }
+            &__more{
+                margin-top: 20px;
+            }
+            &__item{
+                &__title{
+                    font-size: 16px;
+                }
+                &__num{
+                    font-size: 16px;
+                }
+            }
+            &__items{
+                &__btn{
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    
+    .practics{
+        padding: 60px 0;
+        &__item{
+            &__more{
+                margin-top: 25px;
+            }
+        }
+    }
+    .pagination{
+        margin-top: 45px;
+        & ul{
+            & li{
+                width: 35px;
+                height: 35px;
+                & img{
+                    width: 15px;
+                    height: 15px;
+                }
+                & a{
+                    font-size: 16px;
+                }
+            }
+        }
     }
     .reviews{
         padding: 60px 0;
@@ -538,6 +805,9 @@
             }
             &__title{
                 font-size: 26px;
+            }
+            &__more{
+                margin-top: 20px;
             }
         }
     }
@@ -563,6 +833,155 @@
         &__descr,
         &__descr a{
             font-size: 16px;
+        }
+    }
+    .page-hero{
+        padding: 100px 0 60px 0;
+        &__title{
+            margin-top: 25px;
+            font-size: 38px;
+        }
+    }
+    .breadcrumbs{
+        & ul{
+            & li a{
+                font-size: 14px;
+            }
+        }
+    }
+    .about{
+        padding: 60px 0;
+        &-pagination{
+            & .swiper-pagination-bullet{
+                width: 8px;
+                height: 8px;
+            }
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__inner{
+            gap: 25px;
+        }
+        &__btn{
+            margin-top: 25px;
+        }
+        &__descr {
+            & p{
+                font-size: 14px;
+            }
+            & blockquote{
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+        &__images{
+            max-width: 100%;
+            max-height: 450px;
+        }
+    }
+    .certificates{
+        padding: 70px 0 60px 0;
+        &__slider{
+            & .swiper-pagination{
+                margin: 25px auto 0 auto;
+            }
+        }
+        &__item{
+            padding: 30px 0;
+            & img{
+                    width: 120px;
+                    height: 200px;
+            }
+        }
+        &__slider__btns {
+            top: -50px;
+            & .swiper-button-prev{
+                left: -105px;
+            }
+            & .swiper-button-prev,
+            & .swiper-button-next{
+                width: 44px;
+                height: 44px;
+                & svg{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .card{
+        padding: 60px 0;
+        &__items{
+            gap: 15px;
+        }
+        &__item {
+            padding: 25px 15px;
+            width: 100%;
+            &__title{
+                font-size: 18px;
+            }
+            &__descr{
+                font-size: 16px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+    .more{
+        font-size: 16px;
+    }
+    .blog{
+        &-item{
+            &__img{
+                height: 270px;
+            }
+        }
+        &-single{
+            padding: 60px 0;
+            &__info{
+                & p{
+                    font-size: 16px;
+                }
+            }
+            &__img{
+                height: 300px;
+            }
+            &__socials{
+                &__title{
+                    font-size: 24px;
+                }
+                &__descr{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .page-contacts{
+        padding: 60px 0;
+        &__item{
+            &__info{
+                font-size: 18px;
+            }
+            &__title{
+                font-size: 20px;
+            }
+
+        }
+        &__socials{
+            & a{
+                width: 60px;
+                height: 60px;
+                & img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &__map{
+            & iframe{
+                height: 300px;  
+            }
         }
     }
     .footer{
@@ -633,6 +1052,26 @@
             &__form__btn{
                 margin-top: 8px;
             }
+        }
+    }
+    .modal__wrapper3 .modal{
+        &__title{
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+        &__img{
+            height: 150px;
+        }
+        &__descr{
+            margin-top: 35px;
+            & p{
+                font-size: 16px;
+            }
+        }
+        &__btn{
+            margin-top: 35px;
+            padding: 15px 33px;
+            width: 100%;
         }
     }
 }

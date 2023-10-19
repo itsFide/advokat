@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 140px;
+    padding-top: 55px;
     // .footer__inner
     &__copyright{
         padding: 31px 0;
@@ -15,7 +15,6 @@
         }
     }
     &__inner {
-        padding-top: 39px;
         padding-bottom: 31px;
         display: flex;
         justify-content: space-between;
@@ -119,7 +118,9 @@
     &__mail {
     }
 }
-
+.home-page .footer{
+    padding-top: 149px;
+}
 .footer-socials {
     display: flex;
     // .footer-socials__item

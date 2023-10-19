@@ -30,6 +30,7 @@ body{
     }
 }
 .btn{
+    padding: 27px 66px;
     // padding: 22px 0 26px 0;
     background: var(--color_gold);
     color: var(--color_white);
@@ -110,5 +111,107 @@ body{
     transition: all .3s linear;
     &:hover{
         background-color: #674f2b;
+    }
+}
+.more{
+    color: var(--color_gold);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 32.4px */
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: all .3s linear;
+    & svg path{
+        transition: all .3s linear;
+    }
+    &:hover{
+        color: var(--color_white);
+    }
+    &:hover svg path{
+        stroke: var(--color_white);
+    }
+}
+.pagination {
+    margin-top: 70px;
+    &--active{
+        background-color: var(--color_gold);
+    }
+    // .pagination__next
+    & ul{
+        display: flex;
+        & li{
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s linear;
+            &:hover{
+                background-color: var(--color_gold);
+            }
+            & a{
+                color: var(--color_white);
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px; /* 150% */
+            }
+        }
+    }
+    &__next {
+        background-color: var(--color_gold);
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.card{
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item{
+        width: calc((100% / 3) - 20px);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 40px;
+        cursor: pointer;
+        transition: all .3s linear;
+        
+        // &:hover{
+        //     background: rgba(255, 255, 255, 0.03);
+        // }
+        &__subtitle{
+            color: var(--color_gold);
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 36px */
+        }
+        &__title{
+            color: var(--color_white);
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 44.8px */
+        }
+        &__descr{
+            color: rgba(255, 255, 255, 0.80);
+            margin-top: 30px;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 36px */
+        }
     }
 }

@@ -97,6 +97,9 @@
 }
 @media screen and (max-width:1400px){
     .inst{
+        &__inner{
+            gap: 150px;
+        }
         &__title{
             font-size: 56px;
         }
@@ -308,6 +311,7 @@
     .inst{
         &__inner{
             flex-direction: column;
+            gap: 25px;
         }
         &__info{
             width: 100%;

@@ -93,12 +93,6 @@ sup {
   --color_bg: #1D1D1B;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Oswald", sans-serif;
   background-color: var(--color_bg);
@@ -1218,7 +1212,7 @@ body.body-hidden {
 .inst__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 310px;
 }
 
 .inst__info {
@@ -1354,7 +1348,6 @@ body.body-hidden {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-attachment: fixed;
 }
 
 .page-hero::before {
@@ -1642,6 +1635,10 @@ body.body-hidden {
   font-weight: 500;
   line-height: 150%;
   /* 45px */
+}
+
+.page-services {
+  padding: 80px 0 100px 0;
 }
 
 .practics {
@@ -2225,6 +2222,10 @@ body.body-hidden {
 }
 
 @media screen and (max-width: 1400px) {
+  .inst__inner {
+    gap: 150px;
+  }
+
   .inst__title {
     font-size: 56px;
   }
@@ -2430,6 +2431,7 @@ body.body-hidden {
 
   .inst__inner {
     flex-direction: column;
+    gap: 25px;
   }
 
   .inst__info {
